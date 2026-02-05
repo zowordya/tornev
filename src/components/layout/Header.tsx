@@ -9,6 +9,8 @@ const navLinks = [
   { name: 'Результат', href: '#stats' },
   { name: 'Процесс', href: '#process' },
   { name: 'Решения', href: '#solutions' },
+  { name: 'Кейсы', href: '#casestudies' },
+  { name: 'Отзывы', href: '#testimonials' },
 ];
 
 export default function Header() {

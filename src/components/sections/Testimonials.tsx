@@ -28,7 +28,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-32 bg-gray-50 relative overflow-hidden">
+    <section id="testimonials" className="py-32 bg-gray-50 relative overflow-hidden">
       {/* Decorative Background Pattern */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div className="absolute inset-0" style={{

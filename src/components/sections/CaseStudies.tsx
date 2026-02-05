@@ -40,7 +40,7 @@ const cases = [
 
 export default function CaseStudies() {
   return (
-    <section className="py-20 sm:py-32 bg-white">
+    <section id="casestudies" className="py-20 sm:py-32 bg-white">
       <div className="container mx-auto px-4 sm:px-6 md:px-12">
         <FadeIn className="mb-12 sm:mb-20">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">

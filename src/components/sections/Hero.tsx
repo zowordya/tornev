@@ -7,8 +7,8 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center pt-24 pb-12 lg:pt-0 bg-gradient-to-br from-gray-50 via-white to-gray-50">
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Main Grid Pattern - More Visible */}
-        <div className="absolute inset-0 opacity-[0.08]">
+        {/* Main Grid Pattern - More Visible with Green Accent */}
+        <div className="absolute inset-0 opacity-[0.12]">
           <div className="absolute inset-0" style={{
             backgroundImage: `
               linear-gradient(to right, #6DAE81 1px, transparent 1px),
@@ -18,8 +18,8 @@ export default function Hero() {
           }}></div>
         </div>
         
-        {/* Accent Grid Overlay - Denser in corners */}
-        <div className="absolute top-0 left-0 w-1/3 h-1/3 opacity-[0.15]">
+        {/* Accent Grid Overlay - Denser in corners with stronger green */}
+        <div className="absolute top-0 left-0 w-1/3 h-1/3 opacity-[0.2]">
           <div className="absolute inset-0" style={{
             backgroundImage: `
               linear-gradient(to right, #6DAE81 1px, transparent 1px),
@@ -29,7 +29,7 @@ export default function Hero() {
           }}></div>
         </div>
         
-        <div className="absolute bottom-0 right-0 w-1/3 h-1/3 opacity-[0.15]">
+        <div className="absolute bottom-0 right-0 w-1/3 h-1/3 opacity-[0.2]">
           <div className="absolute inset-0" style={{
             backgroundImage: `
               linear-gradient(to right, #6DAE81 1px, transparent 1px),
