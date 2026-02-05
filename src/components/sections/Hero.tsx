@@ -4,15 +4,37 @@ import { ArrowDown } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-24 pb-12 lg:pt-0">
-      <div className="container mx-auto px-4 sm:px-6 md:px-12">
+    <section className="relative min-h-screen flex items-center pt-24 pb-12 lg:pt-0 bg-gradient-to-br from-gray-50 via-white to-gray-50">
+      {/* Decorative Background Elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* Grid Pattern */}
+        <div className="absolute inset-0 opacity-[0.03]">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `linear-gradient(#6DAE81 1px, transparent 1px), linear-gradient(90deg, #6DAE81 1px, transparent 1px)`,
+            backgroundSize: '60px 60px'
+          }}></div>
+        </div>
+        
+        {/* Accent Shapes */}
+        <div className="absolute top-20 right-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
+        
+        {/* Diagonal Lines */}
+        <div className="absolute top-0 right-0 w-1/3 h-full opacity-[0.02]">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `repeating-linear-gradient(45deg, #6DAE81 0, #6DAE81 2px, transparent 0, transparent 40px)`,
+          }}></div>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 sm:px-6 md:px-12 relative z-10">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           <div className="lg:col-span-7 space-y-8 lg:space-y-12">
             <FadeIn delay={0.1}>
-              <div className="inline-flex items-center gap-2 px-3 py-1 border border-border rounded-full mb-6">
-                <span className="w-2 h-2 rounded-full bg-accent"></span>
-                <span className="text-xs uppercase tracking-widest text-gray-500 font-medium">Технологический аудит</span>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white border border-accent/20 rounded-full mb-6 shadow-sm">
+                <span className="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+                <span className="text-xs uppercase tracking-widest text-gray-600 font-medium">Технологический аудит</span>
               </div>
               <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] text-black">
                 Роботизация с <span className="text-accent italic">умом</span>.<br />
@@ -31,13 +53,13 @@ export default function Hero() {
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
                 <a 
                   href="#contact" 
-                  className="inline-flex justify-center items-center px-6 sm:px-8 py-3 sm:py-4 bg-accent text-white font-medium hover:bg-black transition-colors duration-300 text-sm sm:text-base"
+                  className="inline-flex justify-center items-center px-6 sm:px-8 py-3 sm:py-4 bg-accent text-white font-medium hover:bg-black transition-all duration-300 shadow-lg shadow-accent/20 hover:shadow-xl hover:shadow-black/20 text-sm sm:text-base"
                 >
                   Заказать аудит
                 </a>
                 <a 
                   href="#philosophy" 
-                  className="inline-flex justify-center items-center px-6 sm:px-8 py-3 sm:py-4 border border-black text-black font-medium hover:bg-gray-50 transition-colors duration-300 text-sm sm:text-base"
+                  className="inline-flex justify-center items-center px-6 sm:px-8 py-3 sm:py-4 bg-white border-2 border-black text-black font-medium hover:bg-black hover:text-white transition-all duration-300 text-sm sm:text-base"
                 >
                   Узнать подход
                 </a>
@@ -47,7 +69,7 @@ export default function Hero() {
 
           <div className="lg:col-span-5 relative hidden lg:block">
             <FadeIn delay={0.6} className="relative z-10">
-              <div className="aspect-[4/5] bg-gray-50 relative overflow-hidden">
+              <div className="aspect-[4/5] bg-gray-100 relative overflow-hidden border border-border shadow-2xl">
                 {/* Abstract Industrial Representation */}
                 <img 
                   src="/industrial-1.jpg" 
@@ -57,7 +79,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent pointer-events-none"></div>
               </div>
               
-              <div className="absolute -bottom-8 -left-8 bg-white p-6 shadow-none border border-border max-w-xs">
+              <div className="absolute -bottom-8 -left-8 bg-white p-6 shadow-xl border-l-4 border-accent max-w-xs">
                 <p className="font-serif text-3xl text-accent mb-1">0%</p>
                 <p className="text-xs text-gray-500 uppercase tracking-wider">воды в наших отчетах</p>
               </div>
@@ -67,7 +89,7 @@ export default function Hero() {
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce hidden lg:block">
-        <a href="#philosophy" className="text-gray-400 hover:text-black transition-colors">
+        <a href="#philosophy" className="text-gray-400 hover:text-accent transition-colors">
           <ArrowDown strokeWidth={1} size={32} />
         </a>
       </div>
