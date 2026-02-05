@@ -50,7 +50,7 @@ export default function Hero() {
               <div className="aspect-[4/5] bg-gray-50 relative overflow-hidden">
                 {/* Abstract Industrial Representation */}
                 <img 
-                  src="/industrial-1.jpg" 
+                  src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&auto=format&fit=crop" 
                   alt="Industrial Audit Engineer" 
                   className="w-full h-full object-cover filter grayscale contrast-[0.9] hover:contrast-100 transition-all duration-700 hover:scale-105"
                 />
