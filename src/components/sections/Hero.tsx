@@ -7,11 +7,35 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center pt-24 pb-12 lg:pt-0 bg-gradient-to-br from-gray-50 via-white to-gray-50">
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Grid Pattern */}
-        <div className="absolute inset-0 opacity-[0.03]">
+        {/* Main Grid Pattern - More Visible */}
+        <div className="absolute inset-0 opacity-[0.08]">
           <div className="absolute inset-0" style={{
-            backgroundImage: `linear-gradient(#6DAE81 1px, transparent 1px), linear-gradient(90deg, #6DAE81 1px, transparent 1px)`,
-            backgroundSize: '60px 60px'
+            backgroundImage: `
+              linear-gradient(to right, #6DAE81 1px, transparent 1px),
+              linear-gradient(to bottom, #6DAE81 1px, transparent 1px)
+            `,
+            backgroundSize: '40px 40px'
+          }}></div>
+        </div>
+        
+        {/* Accent Grid Overlay - Denser in corners */}
+        <div className="absolute top-0 left-0 w-1/3 h-1/3 opacity-[0.15]">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `
+              linear-gradient(to right, #6DAE81 1px, transparent 1px),
+              linear-gradient(to bottom, #6DAE81 1px, transparent 1px)
+            `,
+            backgroundSize: '20px 20px'
+          }}></div>
+        </div>
+        
+        <div className="absolute bottom-0 right-0 w-1/3 h-1/3 opacity-[0.15]">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `
+              linear-gradient(to right, #6DAE81 1px, transparent 1px),
+              linear-gradient(to bottom, #6DAE81 1px, transparent 1px)
+            `,
+            backgroundSize: '20px 20px'
           }}></div>
         </div>
         
@@ -19,12 +43,9 @@ export default function Hero() {
         <div className="absolute top-20 right-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
         
-        {/* Diagonal Lines */}
-        <div className="absolute top-0 right-0 w-1/3 h-full opacity-[0.02]">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `repeating-linear-gradient(45deg, #6DAE81 0, #6DAE81 2px, transparent 0, transparent 40px)`,
-          }}></div>
-        </div>
+        {/* Diagonal Accent Line */}
+        <div className="absolute top-0 right-0 w-px h-full bg-gradient-to-b from-transparent via-accent/20 to-transparent"></div>
+        <div className="absolute top-0 left-1/4 w-px h-full bg-gradient-to-b from-transparent via-accent/10 to-transparent"></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 md:px-12 relative z-10">
