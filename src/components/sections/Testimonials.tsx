@@ -8,21 +8,21 @@ const testimonials = [
     author: "Алексей Морозов",
     position: "Технический директор",
     company: "Завод металлоконструкций",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&auto=format&fit=crop"
+    image: "/person-1.jpg"
   },
   {
     text: "Независимый руководитель проекта защищал наши интересы на каждом этапе. Робот окупился за 8 месяцев вместо прогнозируемых 18.",
     author: "Мария Соколова",
     position: "Директор по производству",
     company: "Машиностроительный комбинат",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop"
+    image: "/person-2.jpg"
   },
   {
     text: "Команда ПЗТ не просто внедрила коботов, а обучила наших специалистов. Теперь мы сами можем масштабировать автоматизацию.",
     author: "Дмитрий Волков",
     position: "Главный инженер",
     company: "Производство электроники",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&auto=format&fit=crop"
+    image: "/person-3.jpg"
   }
 ];
 

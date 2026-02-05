@@ -30,7 +30,7 @@ export default function Stats() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=800&auto=format&fit=crop" 
+          src="/industrial-4.jpg" 
           alt="Abstract Industrial Background" 
           className="w-full h-full object-cover opacity-40 filter grayscale contrast-125"
         />

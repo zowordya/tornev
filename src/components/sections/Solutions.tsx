@@ -4,19 +4,19 @@ import FadeIn from '../ui/FadeIn';
 const solutions = [
   {
     title: "Промышленные роботы",
-    img: "https://images.unsplash.com/photo-1563191911-e65f8655ebf9?w=800&auto=format&fit=crop"
+    img: "/industrial-5.jpg"
   },
   {
     title: "Коллаборативные роботы",
-    img: "https://images.unsplash.com/photo-1567789884554-0b844b597180?w=800&auto=format&fit=crop"
+    img: "/industrial-3.jpg"
   },
   {
     title: "Автоматизированные линии",
-    img: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&auto=format&fit=crop"
+    img: "/industrial-1.jpg"
   },
   {
     title: "Точечные решения",
-    img: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&auto=format&fit=crop"
+    img: "/industrial-2.jpg"
   }
 ];
 

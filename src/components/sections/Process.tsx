@@ -34,7 +34,7 @@ export default function Process() {
               {/* Context Image for Process */}
               <div className="hidden lg:block relative w-full aspect-[3/4] overflow-hidden bg-gray-100 border border-border">
                  <img 
-                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&auto=format&fit=crop" 
+                  src="/industrial-2.jpg" 
                   alt="Engineer Planning" 
                   className="absolute inset-0 w-full h-full object-cover filter grayscale contrast-[0.9] opacity-90"
                 />

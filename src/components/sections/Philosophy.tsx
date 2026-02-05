@@ -8,21 +8,21 @@ const items = [
     number: "01",
     title: "Только честный аудит",
     desc: "Мы скажем прямо, если робот вам не нужен, и предложим альтернативное решение. Без навязывания лишнего оборудования.",
-    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&auto=format&fit=crop"
+    image: "/industrial-1.jpg"
   },
   {
     icon: BrainCircuit,
     number: "02",
     title: "Выделяем ключевой процесс",
     desc: "Фокусируемся на процессе, который нужен именно вам для роста производительности, качества или улучшения условий труда.",
-    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&auto=format&fit=crop"
+    image: "/industrial-2.jpg"
   },
   {
     icon: Handshake,
     number: "03",
     title: "Работаем как партнеры",
     desc: "Закрепляем за вами независимого руководителя проекта — вашего персонального контролера и помощника на всех этапах.",
-    image: "https://images.unsplash.com/photo-1567789884554-0b844b597180?w=600&auto=format&fit=crop"
+    image: "/industrial-3.jpg"
   }
 ];
 
@@ -61,7 +61,7 @@ export default function Philosophy() {
             <FadeIn delay={0.3}>
               <div className="relative aspect-[4/3] overflow-hidden border border-border">
                 <img 
-                  src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&auto=format&fit=crop"
+                  src="/industrial-1.jpg"
                   alt="Industrial Excellence"
                   className="w-full h-full object-cover filter grayscale contrast-[0.95] hover:scale-105 transition-transform duration-700"
                 />

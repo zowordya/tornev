@@ -6,7 +6,7 @@ const cases = [
   {
     title: "Автоматизация сварочного участка",
     industry: "Металлообработка",
-    image: "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=800&auto=format&fit=crop",
+    image: "/industrial-4.jpg",
     results: [
       { icon: TrendingUp, label: "Производительность", value: "+180%" },
       { icon: Clock, label: "Окупаемость", value: "7 мес" },
@@ -17,7 +17,7 @@ const cases = [
   {
     title: "Коботы на линии упаковки",
     industry: "Пищевая промышленность",
-    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&auto=format&fit=crop",
+    image: "/industrial-1.jpg",
     results: [
       { icon: TrendingUp, label: "Производительность", value: "+120%" },
       { icon: Clock, label: "Окупаемость", value: "11 мес" },
@@ -28,7 +28,7 @@ const cases = [
   {
     title: "Автоматизация контроля качества",
     industry: "Электроника",
-    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&auto=format&fit=crop",
+    image: "/industrial-2.jpg",
     results: [
       { icon: TrendingUp, label: "Точность", value: "99.8%" },
       { icon: Clock, label: "Окупаемость", value: "9 мес" },

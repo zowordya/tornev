@@ -22,7 +22,7 @@ export default function Problems() {
               {/* Background image for positive card */}
               <div className="absolute inset-0 opacity-[0.06] group-hover:opacity-10 transition-opacity duration-700">
                  <img 
-                  src="https://images.unsplash.com/photo-1567789884554-0b844b597180?w=800&auto=format&fit=crop" 
+                  src="/industrial-3.jpg" 
                   className="w-full h-full object-cover filter grayscale"
                   alt="Modern Cobot"
                 />
