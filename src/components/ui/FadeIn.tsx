@@ -15,9 +15,9 @@ const FadeIn: React.FC<FadeInProps> = ({
   direction = 'up' 
 }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: "-50px", amount: 0.2 });
 
-  const yOffset = direction === 'up' ? 50 : 0;
+  const yOffset = direction === 'up' ? 30 : 0;
 
   return (
     <motion.div
@@ -25,8 +25,8 @@ const FadeIn: React.FC<FadeInProps> = ({
       initial={{ opacity: 0, y: yOffset }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: yOffset }}
       transition={{ 
-        duration: 0.8, 
-        ease: [0.16, 1, 0.3, 1], // Custom slow ease
+        duration: 0.5, 
+        ease: [0.25, 0.1, 0.25, 1], // Faster, smoother ease
         delay: delay 
       }}
       className={className}
