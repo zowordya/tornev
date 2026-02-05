@@ -7,7 +7,7 @@ export default function CTA() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&auto=format&fit=crop" 
+          src="/industrial-6.jpg" 
           alt="Modern Architecture" 
           className="w-full h-full object-cover opacity-[0.03] grayscale scale-110"
         />
@@ -27,7 +27,7 @@ export default function CTA() {
             <div className="bg-white p-6 sm:p-8 border border-border">
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 mb-6">
                  <div className="w-20 h-20 sm:w-24 sm:h-24 bg-gray-200 rounded-full overflow-hidden shrink-0">
-                    <img src="https://leader-id.storage.yandexcloud.net/user_photo/2141534/615d5a5bc5544277466125_360.jpeg" alt="Юрий Торнев" className="w-full h-full object-cover" />
+                    <img src="/director.jpg" alt="Юрий Торнев" className="w-full h-full object-cover" />
                  </div>
                  <div>
                     <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">Прямой контакт</p>
